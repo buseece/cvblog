@@ -35,9 +35,9 @@ class HeaderBar extends React.Component {
         return (
             <div>
                 <Navbar bg="lg" expand="lg" variant="dark" fixed="top" style={this.state.navbarStyle}>
-                <Navbar.Brand href={'/'} style={{color:"#5AAFBC", marginLeft:"40px"}}>
+                {/*<Navbar.Brand href={'/'} style={{color:"#5AAFBC", marginLeft:"40px"}}>
                 <img style={{height:"60px"}} src={process.env.PUBLIC_URL + '/laptop-coding.png'} alt="logo"/>
-                </Navbar.Brand>
+                </Navbar.Brand>*/}
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse className="justify-content-center" id="basic-navbar-nav">
                     <Nav>

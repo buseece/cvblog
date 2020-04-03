@@ -27,5 +27,3 @@ class Interest extends React.Component {
 }
 
 export default Interest;
-
-
