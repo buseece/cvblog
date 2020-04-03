@@ -19,12 +19,15 @@ code {
 }
 
 #about {
-  background-color: #512b58;
   min-height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1); /* #512b58;*/
+}
+
+.about-background {
   background-image: url(https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,16 +35,21 @@ code {
 
 .about-title {
   font-size: calc(40px + 5vmin);
-  text-align: left;
 }
 
 .about-text{
   font-size: 26px;
+  margin: auto;
+  text-align: left;
 }
 
 #interest {
   min-height: 60vh;  
   color: black;
+}
+
+#interest >* .card {
+  box-shadow: 0 10px 11px 0px rgba(0, 0, 0, 0.25); 
 }
 
 .section-title {

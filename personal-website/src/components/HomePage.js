@@ -7,17 +7,20 @@ class HomePage extends React.Component {
     super(props);
   }
 
-
   render() {
     return (
       <div>
-        <div className="component-container">
+        <div className="component-container about-background">
           <section id="about">
-            <div className="about-text">
-              <div className="about-title">
-                Hello!
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-6 about-text">
+                  <div className="about-title">
+                    Hello!
+                  </div>
+                  It's Buse, computer engineer with prior experience in web development and project management.
+                </div>
               </div>
-              It's Buse Ece Güldiken
             </div>
           </section>
         </div>
