@@ -51,7 +51,7 @@ class HeaderBar extends React.Component {
                             ART
                         </Link>*/}
                         <Nav.Link href="#about" style={{fontWeight:"600"}}>ABOUT</Nav.Link>
-                        <Nav.Link href="#education" style={{fontWeight:"600"}}>,EDUCATION</Nav.Link>
+                        <Nav.Link href="#education" style={{fontWeight:"600"}}>EDUCATION</Nav.Link>
                         <Nav.Link href="#experience" style={{fontWeight:"600"}}>EXPERIENCE</Nav.Link>
                         <Nav.Link href="#more" style={{fontWeight:"600"}}>MORE</Nav.Link>
                     </Nav>

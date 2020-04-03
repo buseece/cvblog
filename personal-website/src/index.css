@@ -45,8 +45,10 @@ code {
 }
 
 .section-title {
-  font-size: calc(35px);
+  font-size: 32px;
   text-align: left;
+  color: rgb(81, 43, 88);
+  font-weight: 500;
 }
 
 .dark-text {

@@ -9,7 +9,7 @@ class Interest extends React.Component {
                 <div className="container">
                     <div className="row">
                         <div className="section-title">
-                            INTERESTS
+                            My Interests
                         </div>
                     </div>
                     <div className="row pt-5">
