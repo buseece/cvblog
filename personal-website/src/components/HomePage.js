@@ -11,9 +11,13 @@ class HomePage extends React.Component {
     return (
       <div>
         <div className="component-container">
-          <section id="flyer">
-            <h1>Hello!</h1>
-            It's Buse.
+          <section id="about">
+            <div className="about-text">
+              <div className="about-title">
+                Hello!
+              </div>
+              It's Buse Ece Güldiken
+            </div>
           </section>
         </div>
           
