@@ -15,7 +15,7 @@ class HeaderBar extends React.Component {
         if(window.scrollY === 0){
             this.setState({navbarStyle:{}});            
         } else if (window.scrollY !== 0 && !this.state.navbarStyle.backgroundColor) {
-            this.setState({navbarStyle:{backgroundColor:"#343a40"}});
+            this.setState({navbarStyle:{backgroundColor:"#512b58"}});
         }
     }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import Interest from './Interest'
 
 class HomePage extends React.Component {
 
@@ -20,8 +21,7 @@ class HomePage extends React.Component {
             </div>
           </section>
         </div>
-          
-        
+        <Interest />
       </div>
     );
   }
