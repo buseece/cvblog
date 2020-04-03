@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header'
 import HomePage from './components/HomePage'
-import BlogHome from './components/BlogHome'
-import BlogPost from './components/BlogPost'
+import AboutPage from './components/AboutPage'
+import NotFound from './components/NotFound'
 import Footer from './components/Footer'
 
 function App() {
@@ -14,8 +14,8 @@ function App() {
         <Header />
         <Switch>
           <Route exact path='/' component={HomePage} />
-          <Route path='/blog' component={BlogHome} />
-          <Route path='/post' component={BlogPost} />
+          <Route path='/about' component={AboutPage} />
+          <Route component={NotFound} />
         </Switch>
         <Footer />
       </div>

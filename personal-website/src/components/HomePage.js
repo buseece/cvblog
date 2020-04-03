@@ -25,19 +25,6 @@ class HomePage extends React.Component {
             </div>
           </section>
         </div>
-        <div className="component-container">
-          <section id="education" className="pt-5">
-            <div className="container">
-              <div className="row">
-                  <div className="section-title">
-                      Education
-                  </div>
-              </div>
-              <ResumeItem time="2015-2019" title="Bachelor of Computer Engineering, BOGAZICI UNIVERSITY" subInfo1="3.53/4.00" subInfo2="Courses:" text="Introduction to OOP, Data Structures & Algorithms, Analysis of Algorithms, Fundamentals of Software Engineering, Principles of Programming Languages, Digital Systems, Introduction to Database, Operating Systems, Computer Organization"/>
-              <ResumeItem time="2017-2018/2" title="Bachelor of Computer Science (Erasmus), UTRECHT UNIVERSITY" subInfo2="Courses:" text="Software Testing and Verification, Interaction Technology, Entrepreneurship, Information Security"/>
-          </div>
-          </section>
-        </div>
         <Interest />
       </div>
     );

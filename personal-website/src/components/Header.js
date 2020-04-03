@@ -7,18 +7,23 @@ class HeaderBar extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            navbarStyle: {}
+            navbarStyle: {},
+            navLinkStyle: {
+                fontWeight:"600", 
+                color:"rgba(255, 255, 255, 0.8)"
+            }
         }
     }
 
     handleScroll = () => {
         if(window.scrollY === 0){
             this.setState({navbarStyle:{}});            
-        } else if (window.scrollY !== 0 && !this.state.navbarStyle.backgroundColor) {
-            this.setState({navbarStyle:{backgroundColor:"#512b58"}});
+        } else if (window.scrollY !== 0 && !this.state.navbarStyle.backgroundImage) {
+            this.setState({navbarStyle:{backgroundImage:"url(https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"}});
         }
     }
 
+    
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
     }
@@ -28,10 +33,7 @@ class HeaderBar extends React.Component {
     }
 
     render(){ 
-        let headerLinkStyle = {
-            fontWeight:"600", 
-            color:"rgba(255, 255, 255, 0.5)"
-        }
+
         return (
             <div>
                 <Navbar bg="lg" expand="lg" variant="dark" fixed="top" style={this.state.navbarStyle}>
@@ -50,10 +52,10 @@ class HeaderBar extends React.Component {
                         <Link to="/art" className="nav-link custom-nav-link" >
                             ART
                         </Link>*/}
-                        <Nav.Link href="#about" style={{fontWeight:"600"}}>ABOUT</Nav.Link>
-                        <Nav.Link href="#education" style={{fontWeight:"600"}}>EDUCATION</Nav.Link>
-                        <Nav.Link href="#experience" style={{fontWeight:"600"}}>EXPERIENCE</Nav.Link>
-                        <Nav.Link href="#more" style={{fontWeight:"600"}}>MORE</Nav.Link>
+                        <Nav.Link href="/" style={this.state.navLinkStyle}>HOME</Nav.Link>
+                        <Nav.Link href="/about" style={this.state.navLinkStyle}>ABOUT</Nav.Link>
+                        <Nav.Link href="/blog" style={this.state.navLinkStyle}>BLOG</Nav.Link>
+                        <Nav.Link href="/art" style={this.state.navLinkStyle}>ART</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
                 </Navbar>

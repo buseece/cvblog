@@ -63,10 +63,6 @@ code {
   color: #343a40;
 }
 
-#education {
-  text-align: left;
-}
-
 .resume-item-title {
   font-weight: 400px;
 }
@@ -74,4 +70,17 @@ code {
 #education .time {
   color: #999;
   font-size: 14px;
+}
+
+.header-part {
+  min-height: 20vh;
+}
+
+#coming-next {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
 }
